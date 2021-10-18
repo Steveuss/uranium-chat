@@ -60,7 +60,7 @@ const getGifFromLink = async (url) => {
   }
 };
 
-
+const config = require('./config.json');
 
 // Your prefix to start the hourly reminder and for others to use the help command
 var prefix = "c!";
@@ -71,7 +71,7 @@ const globalchat = "uranium-chat" && "✨〡uranium-chat"
 // name of the log channel
 const logchat = "ccc-logs"
 // put your token there
-bot.login("ODc0ODc4ODQ0NDM4NDU0Mjcy.YRNYag.TH4yig-3I_-vq1iopwpsqjtNE1Y");
+bot.login(config.token);
 // start the bot and enjoy
 
 bot.on("ready", () => {
